@@ -7,13 +7,13 @@ public class Main {
 // порог для начисления бонуса
         int bonusThreshold = 1000;
 // начальный баланс на счете
-        int initialBalans = 200;
+        int initialBalans = 500;
 // сумма пополнения
-        int depositAmount = 1000;
+        int depositAmount = 3000;
 // условия
         int bonus;
         if (depositAmount >= bonusThreshold) {
-            bonus = (depositAmount / initialBalans ) * bonusRate;
+            bonus = (depositAmount / 200) * bonusRate;
         } else {
             bonus = 0;
         }
