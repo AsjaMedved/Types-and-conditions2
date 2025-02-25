@@ -7,20 +7,21 @@ public class Main {
 // порог для начисления бонуса
         int bonusThreshold = 1000;
 // начальный баланс на счете
-        int initialBalans = 500;
+        int initialBalans = 200;
 // сумма пополнения
-        int depositAmount = 3000;
-// условия
+        int depositAmount = 3500;
+// баланс
+        int balans = initialBalans + depositAmount;
+// условие бонуса
         int bonus;
-        if (depositAmount >= bonusThreshold) {
+        if (balans >= bonusThreshold) {
             bonus = (depositAmount / 200) * bonusRate;
         } else {
             bonus = 0;
         }
-        // Итоговый баланс
+// Итоговый баланс
         int finalBalans = initialBalans + depositAmount + bonus;
-
-        // Вывод результатов
+// Вывод результатов
         System.out.println("Итоговый баланс: " + finalBalans + " рублей");
         System.out.println("Начислено бонусов: " + bonus + " рублей");
              }
